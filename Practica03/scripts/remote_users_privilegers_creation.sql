@@ -23,6 +23,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'superadmin';
 GRANT ALL PRIVILEGES ON db_test_7b.* TO 'admin';
 GRANT SELECT, INSERT, UPDATE ON db_test_7b.tb_users TO 'support';
 GRANT SELECT, INSERT, UPDATE ON db_test_7b.tb_products TO 'support';
+GRANT SELECT, INSERT, UPDATE ON db_test_7b.tbc_categories TO 'support';
+GRANT SELECT, INSERT, UPDATE ON db_test_7b.tbd_products_categories TO 'support';|   
 GRANT SELECT, INSERT, UPDATE ON db_test_7b.tb_products TO 'seller';
 
 /* ASIGNACION DE ROLES A LOS USUARIOS */
