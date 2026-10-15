@@ -12,3 +12,4 @@ Periodo Septiembre - Diciembre 2026
 |1.|Metodología de Evaluación de la Materia| Transcribir en libreta y comprender la metodología y fechas de evaluación de la asignatura| 5| Concluida |
 |2.|Conexiones Remotas para Bases de Datos SQL| Crear y administrar usuarios y privilegios para conexiones desde internet o redes locales| 60 | Concluida |
 |3.|Manipulación de Datos en Conexiones Remotas| Ejecutar sentencias DML (SELECT, INSERT, UPDATE y DELETE) desde un cliente remoto sobre una base de datos alojada en otro servidor| ?? | En proceso |
+|4.|Examen Practico Instalacion de Postgre y MySQL en un VPS| Instalar, Configuraar, Desplegar y Simular datos en los Servicion de Bases de Datos Relacionales| 100 | En proceso |
