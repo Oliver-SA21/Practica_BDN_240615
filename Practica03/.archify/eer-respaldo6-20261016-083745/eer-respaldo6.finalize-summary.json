@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "skipped",
+  "type": "erd",
+  "quality": "standard",
+  "specification": {
+    "path": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\candidate.json",
+    "sha256": "04259a0635ee625c4d5fcd535d71e7e21ef6ca76ca8ab8d96673963afaaa09b9",
+    "bytes": 25120
+  },
+  "artifact": {
+    "path": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+    "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+    "bytes": 871731
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "skipped"
+  },
+  "failedStage": "browser-check",
+  "diagnostics": [
+    {
+      "code": "viewer/chrome-unavailable",
+      "severity": "warning",
+      "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+      "subject": {
+        "artifact": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html"
+      },
+      "evidence": {
+        "executable": null
+      },
+      "supportedFixes": [
+        "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun browser-check"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.finalize.json",
+    "summaryReceipt": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.finalize-summary.json",
+    "browserCheckReceipt": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.1.0",
+    "availableVersion": "3.1.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-16T14:38:43.795Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1490
+}

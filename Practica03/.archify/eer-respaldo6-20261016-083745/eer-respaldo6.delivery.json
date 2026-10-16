@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "e4c03917-580d-458e-90cf-ab05ad464c59",
+  "status": "current",
+  "command": "deliver",
+  "type": "erd",
+  "input": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\candidate.json",
+  "output": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+  "specification": {
+    "sha256": "04259a0635ee625c4d5fcd535d71e7e21ef6ca76ca8ab8d96673963afaaa09b9",
+    "bytes": 25120
+  },
+  "artifact": {
+    "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+    "bytes": 871731
+  }
+}

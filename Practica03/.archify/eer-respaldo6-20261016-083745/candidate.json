@@ -1,0 +1,695 @@
+{
+  "schema_version": 1,
+  "diagram_type": "erd",
+  "meta": {
+    "title": "EER · db_test_7b · Respaldo6",
+    "locale": "es",
+    "output": ".archify/eer-respaldo6-20261016-083745/eer-respaldo6.html",
+    "quality_profile": "standard",
+    "views": [
+      {
+        "id": "catalogo",
+        "label": "Catálogo y jerarquía",
+        "focus": [
+          "tb_products",
+          "tbd_products_categories",
+          "tb_categories"
+        ]
+      },
+      {
+        "id": "usuarios",
+        "label": "Usuarios, carritos y deseos",
+        "focus": [
+          "tb_users",
+          "tb_carts",
+          "tbd_users_wishlist_products",
+          "tb_products"
+        ]
+      },
+      {
+        "id": "proveedores",
+        "label": "Proveedores",
+        "focus": [
+          "tb_users",
+          "tbd_products_users_providers",
+          "tb_products"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "mode": "grid",
+    "gapX": 90,
+    "gapY": 65,
+    "entityW": 320
+  },
+  "entities": [
+    {
+      "id": "tb_carts",
+      "label": "tb_carts",
+      "row": 1,
+      "col": 0,
+      "tag": "Usuarios",
+      "attributes": [
+        {
+          "name": "ID",
+          "type": "int unsigned",
+          "key": [
+            "pk"
+          ]
+        },
+        {
+          "name": "user_ID",
+          "type": "int",
+          "references": "tb_users.ID",
+          "key": [
+            "uk",
+            "fk"
+          ]
+        },
+        {
+          "name": "status",
+          "type": "bit(1)"
+        },
+        {
+          "name": "creation_date",
+          "type": "datetime"
+        },
+        {
+          "name": "last_update",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "id": "tb_categories",
+      "label": "tb_categories",
+      "row": 2,
+      "col": 1,
+      "tag": "Catálogo",
+      "attributes": [
+        {
+          "name": "ID",
+          "type": "int unsigned",
+          "key": [
+            "pk"
+          ]
+        },
+        {
+          "name": "name",
+          "type": "varchar(120)",
+          "key": [
+            "uk"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "sup_id_category",
+          "type": "int unsigned",
+          "references": "tb_categories.ID",
+          "key": [
+            "fk"
+          ]
+        },
+        {
+          "name": "status",
+          "type": "bit(1)"
+        },
+        {
+          "name": "creation_date",
+          "type": "datetime"
+        },
+        {
+          "name": "last_update",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "id": "tb_logs",
+      "label": "tb_logs",
+      "row": 1,
+      "col": 2,
+      "tag": "Auditoría",
+      "attributes": [
+        {
+          "name": "ID",
+          "type": "int",
+          "key": [
+            "pk"
+          ]
+        },
+        {
+          "name": "table_name",
+          "type": "varchar(80)"
+        },
+        {
+          "name": "table_operation",
+          "type": "enum('Create','Read','Update','Delete')"
+        },
+        {
+          "name": "db_user",
+          "type": "varchar(80)"
+        },
+        {
+          "name": "operation_date",
+          "type": "datetime"
+        },
+        {
+          "name": "operation_description",
+          "type": "text"
+        },
+        {
+          "name": "operation_status",
+          "type": "bit(1)"
+        }
+      ],
+      "width": 414
+    },
+    {
+      "id": "tb_products",
+      "label": "tb_products",
+      "row": 0,
+      "col": 1,
+      "tag": "Catálogo",
+      "attributes": [
+        {
+          "name": "ID",
+          "type": "int unsigned",
+          "key": [
+            "pk"
+          ]
+        },
+        {
+          "name": "SKU",
+          "type": "varchar(50)",
+          "key": [
+            "uk"
+          ]
+        },
+        {
+          "name": "name",
+          "type": "varchar(250)"
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "current_price",
+          "type": "decimal(10,2)"
+        },
+        {
+          "name": "current_stock",
+          "type": "int unsigned"
+        },
+        {
+          "name": "status",
+          "type": "bit(1)"
+        },
+        {
+          "name": "creation_date",
+          "type": "datetime"
+        },
+        {
+          "name": "last_update",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "id": "tb_users",
+      "label": "tb_users",
+      "row": 0,
+      "col": 0,
+      "tag": "Usuarios",
+      "attributes": [
+        {
+          "name": "ID",
+          "type": "int",
+          "key": [
+            "pk"
+          ]
+        },
+        {
+          "name": "email",
+          "type": "varchar(100)",
+          "key": [
+            "uk"
+          ]
+        },
+        {
+          "name": "nick",
+          "type": "varchar(50)",
+          "key": [
+            "uk"
+          ]
+        },
+        {
+          "name": "password",
+          "type": "varchar(255)"
+        },
+        {
+          "name": "creation_data",
+          "type": "datetime"
+        },
+        {
+          "name": "last_update",
+          "type": "datetime"
+        },
+        {
+          "name": "last_login",
+          "type": "datetime"
+        },
+        {
+          "name": "status",
+          "type": "bit(1)"
+        }
+      ]
+    },
+    {
+      "id": "tbd_products_categories",
+      "label": "tbd_products_categories",
+      "row": 1,
+      "col": 1,
+      "tag": "Catálogo",
+      "attributes": [
+        {
+          "name": "product_id",
+          "type": "int unsigned",
+          "references": "tb_products.ID",
+          "key": [
+            "pk",
+            "fk"
+          ]
+        },
+        {
+          "name": "category_id",
+          "type": "int unsigned",
+          "references": "tb_categories.ID",
+          "key": [
+            "pk",
+            "fk"
+          ]
+        },
+        {
+          "name": "status",
+          "type": "bit(1)"
+        },
+        {
+          "name": "creation_date",
+          "type": "datetime"
+        },
+        {
+          "name": "last_update",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "id": "tbd_products_users_providers",
+      "label": "tbd_products_users_providers",
+      "row": 0,
+      "col": 2,
+      "tag": "Proveedores",
+      "attributes": [
+        {
+          "name": "user_id",
+          "type": "int",
+          "references": "tb_users.ID",
+          "key": [
+            "pk",
+            "fk"
+          ]
+        },
+        {
+          "name": "product_id",
+          "type": "int unsigned",
+          "references": "tb_products.ID",
+          "key": [
+            "pk",
+            "fk"
+          ]
+        },
+        {
+          "name": "type_ownership",
+          "type": "enum('Owner','Reseller','Distributor')"
+        },
+        {
+          "name": "status",
+          "type": "bit(1)"
+        },
+        {
+          "name": "available_date",
+          "type": "datetime"
+        },
+        {
+          "name": "creation_date",
+          "type": "datetime"
+        },
+        {
+          "name": "last_update",
+          "type": "datetime"
+        }
+      ],
+      "width": 420
+    },
+    {
+      "id": "tbd_users_wishlist_products",
+      "label": "tbd_users_wishlist_products",
+      "row": 2,
+      "col": 0,
+      "tag": "Usuarios",
+      "attributes": [
+        {
+          "name": "user_ID",
+          "type": "int",
+          "references": "tb_users.ID",
+          "key": [
+            "pk",
+            "fk"
+          ]
+        },
+        {
+          "name": "product_ID",
+          "type": "int unsigned",
+          "references": "tb_products.ID",
+          "key": [
+            "pk",
+            "fk"
+          ]
+        },
+        {
+          "name": "status",
+          "type": "bit(1)"
+        },
+        {
+          "name": "creation_date",
+          "type": "datetime"
+        },
+        {
+          "name": "last_update",
+          "type": "datetime"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "tb_carts_ibfk_1",
+      "from": "tb_carts",
+      "to": "tb_users",
+      "fromCardinality": "one",
+      "toCardinality": "one",
+      "fromOptional": true,
+      "toOptional": false,
+      "identifying": false
+    },
+    {
+      "id": "fk_category_product",
+      "from": "tbd_products_categories",
+      "to": "tb_categories",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "fromOptional": true,
+      "toOptional": false,
+      "identifying": true
+    },
+    {
+      "id": "fk_product_category",
+      "from": "tbd_products_categories",
+      "to": "tb_products",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "fromOptional": true,
+      "toOptional": false,
+      "identifying": true
+    },
+    {
+      "id": "fk_provider_product",
+      "from": "tbd_products_users_providers",
+      "to": "tb_products",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "fromOptional": true,
+      "toOptional": false,
+      "identifying": true
+    },
+    {
+      "id": "fk_provider_user",
+      "from": "tbd_products_users_providers",
+      "to": "tb_users",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "fromOptional": true,
+      "toOptional": false,
+      "identifying": true
+    },
+    {
+      "id": "fk_products3",
+      "from": "tbd_users_wishlist_products",
+      "to": "tb_products",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "fromOptional": true,
+      "toOptional": false,
+      "identifying": true
+    },
+    {
+      "id": "fk_user2",
+      "from": "tbd_users_wishlist_products",
+      "to": "tb_users",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "fromOptional": true,
+      "toOptional": false,
+      "identifying": true
+    }
+  ],
+  "cards": [
+    {
+      "dot": "amber",
+      "title": "Relación recursiva · categorías",
+      "items": [
+        "fk_superior_category: tb_categories.sup_id_category → tb_categories.ID. Cada categoría tiene 0..1 padre; cada padre tiene 0..N subcategorías. FK no identificadora. Archify no admite conectores recursivos: esta relación se conserva en esta ficha y en el atributo FK, sin duplicar la tabla."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Lectura del EER",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql; base db_test_7b; MySQL 8.0.46. Todas las columnas físicas se muestran con su tipo SQL exacto. Las fichas por tabla conservan restricciones, DEFAULT, ON UPDATE, índices y opciones completas.",
+        "Tres entidades asociativas resuelven N:M: productos–categorías, usuarios–productos como proveedores y usuarios–productos como lista de deseos. Sus FK forman la PK compuesta: relaciones identificadoras.",
+        "tb_carts.user_ID es UNIQUE y NOT NULL: cada carrito pertenece a un usuario; cada usuario tiene cero o un carrito.",
+        "tb_categories.sup_id_category es nullable: categoría con cero o un padre y cero o muchas subcategorías. No hay restricción SQL que impida ciclos.",
+        "No hay especializaciones, herencia ni discriminadores de subtipos declarados. type_ownership es un ENUM, no una jerarquía de entidades.",
+        "Cada padre puede tener cero hijos; una FK no obliga a que existan registros dependientes. No se declaran ON DELETE/ON UPDATE: en InnoDB rige NO ACTION, equivalente a RESTRICT.",
+        "tb_logs no tiene FK. La auditoría y los joins de vistas por texto no se dibujan como relaciones referenciales."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tb_carts · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 25–34",
+        "`ID` int unsigned NOT NULL AUTO_INCREMENT",
+        "`user_ID` int NOT NULL",
+        "`status` bit(1) DEFAULT b'1'",
+        "`creation_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP",
+        "`last_update` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP",
+        "PRIMARY KEY (`ID`)",
+        "UNIQUE KEY `uk_cart_user` (`user_ID`)",
+        "CONSTRAINT `tb_carts_ibfk_1` FOREIGN KEY (`user_ID`) REFERENCES `tb_users` (`ID`)",
+        "",
+        "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tb_categories · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 53–65",
+        "`ID` int unsigned NOT NULL AUTO_INCREMENT",
+        "`name` varchar(120) NOT NULL",
+        "`description` text",
+        "`sup_id_category` int unsigned DEFAULT NULL",
+        "`status` bit(1) NOT NULL DEFAULT b'1'",
+        "`creation_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP",
+        "`last_update` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP",
+        "PRIMARY KEY (`ID`)",
+        "UNIQUE KEY `name` (`name`)",
+        "KEY `fk_superior_category` (`sup_id_category`)",
+        "CONSTRAINT `fk_superior_category` FOREIGN KEY (`sup_id_category`) REFERENCES `tb_categories` (`ID`)",
+        "",
+        "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tb_logs · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 228–237",
+        "`ID` int NOT NULL AUTO_INCREMENT",
+        "`table_name` varchar(80) NOT NULL",
+        "`table_operation` enum('Create','Read','Update','Delete') DEFAULT NULL",
+        "`db_user` varchar(80) NOT NULL",
+        "`operation_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP",
+        "`operation_description` text NOT NULL",
+        "`operation_status` bit(1) DEFAULT b'1'",
+        "PRIMARY KEY (`ID`)",
+        "",
+        "ENGINE=InnoDB AUTO_INCREMENT=5023 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tb_products · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 257–269",
+        "`ID` int unsigned NOT NULL AUTO_INCREMENT",
+        "`SKU` varchar(50) NOT NULL",
+        "`name` varchar(250) NOT NULL",
+        "`description` text",
+        "`current_price` decimal(10,2) NOT NULL DEFAULT '0.00'",
+        "`current_stock` int unsigned NOT NULL DEFAULT '0'",
+        "`status` bit(1) DEFAULT b'1'",
+        "`creation_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP",
+        "`last_update` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP",
+        "PRIMARY KEY (`ID`)",
+        "UNIQUE KEY `SKU` (`SKU`)",
+        "",
+        "ENGINE=InnoDB AUTO_INCREMENT=5009 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tb_users · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 407–419",
+        "`ID` int NOT NULL AUTO_INCREMENT",
+        "`email` varchar(100) NOT NULL",
+        "`nick` varchar(50) NOT NULL",
+        "`password` varchar(255) NOT NULL",
+        "`creation_data` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP",
+        "`last_update` datetime DEFAULT NULL",
+        "`last_login` datetime DEFAULT NULL",
+        "`status` bit(1) DEFAULT b'1'",
+        "PRIMARY KEY (`ID`)",
+        "UNIQUE KEY `email` (`email`)",
+        "UNIQUE KEY `nick` (`nick`)",
+        "",
+        "ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tbd_products_categories · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 629–640",
+        "`product_id` int unsigned NOT NULL",
+        "`category_id` int unsigned NOT NULL",
+        "`status` bit(1) NOT NULL DEFAULT b'1'",
+        "`creation_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP",
+        "`last_update` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP",
+        "PRIMARY KEY (`product_id`,`category_id`)",
+        "KEY `fk_product_category` (`product_id`)",
+        "KEY `fk_category_product` (`category_id`)",
+        "CONSTRAINT `fk_category_product` FOREIGN KEY (`category_id`) REFERENCES `tb_categories` (`ID`)",
+        "CONSTRAINT `fk_product_category` FOREIGN KEY (`product_id`) REFERENCES `tb_products` (`ID`)",
+        "",
+        "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tbd_products_users_providers · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 659–671",
+        "`user_id` int NOT NULL",
+        "`product_id` int unsigned NOT NULL",
+        "`type_ownership` enum('Owner','Reseller','Distributor') DEFAULT NULL",
+        "`status` bit(1) DEFAULT b'1'",
+        "`available_date` datetime DEFAULT NULL",
+        "`creation_date` datetime DEFAULT CURRENT_TIMESTAMP",
+        "`last_update` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+        "PRIMARY KEY (`user_id`,`product_id`)",
+        "KEY `fk_provider_product` (`product_id`)",
+        "CONSTRAINT `fk_provider_product` FOREIGN KEY (`product_id`) REFERENCES `tb_products` (`ID`)",
+        "CONSTRAINT `fk_provider_user` FOREIGN KEY (`user_id`) REFERENCES `tb_users` (`ID`)",
+        "",
+        "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "tbd_users_wishlist_products · definición completa",
+      "items": [
+        "Fuente: dakups/Respaldo6.sql, líneas 800–810",
+        "`user_ID` int NOT NULL",
+        "`product_ID` int unsigned NOT NULL",
+        "`status` bit(1) NOT NULL DEFAULT b'1'",
+        "`creation_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP",
+        "`last_update` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+        "PRIMARY KEY (`user_ID`,`product_ID`)",
+        "KEY `fk_products3` (`product_ID`)",
+        "CONSTRAINT `fk_products3` FOREIGN KEY (`product_ID`) REFERENCES `tb_products` (`ID`)",
+        "CONSTRAINT `fk_user2` FOREIGN KEY (`user_ID`) REFERENCES `tb_users` (`ID`)",
+        "",
+        "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci",
+        "Columnas sin NOT NULL permiten NULL. Sin DEFAULT explícito: NULL implícito si es nullable; en otro caso no hay DEFAULT declarado."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Triggers de auditoría · 15",
+      "items": [
+        "trg_tbc_categories_after_insert: AFTER INSERT en tb_categories; escribe en tb_logs.",
+        "trg_tbc_categories_after_update: AFTER UPDATE en tb_categories; escribe en tb_logs.",
+        "trg_categories_after_delete: AFTER DELETE en tb_categories; escribe en tb_logs.",
+        "trg_products_after_insert: AFTER INSERT en tb_products; escribe en tb_logs.",
+        "trg_products_after_update: AFTER UPDATE en tb_products; escribe en tb_logs.",
+        "trg_products_after_delete: AFTER DELETE en tb_products; escribe en tb_logs.",
+        "trg_users_after_insert: AFTER INSERT en tb_users; escribe en tb_logs.",
+        "trg_users_after_update: AFTER UPDATE en tb_users; escribe en tb_logs.",
+        "trg_users_after_delete: AFTER DELETE en tb_users; escribe en tb_logs.",
+        "trg_providers_after_insert: AFTER INSERT en tbd_products_users_providers; escribe en tb_logs.",
+        "trg_providers_after_update: AFTER UPDATE en tbd_products_users_providers; escribe en tb_logs.",
+        "trg_providers_after_delete: AFTER DELETE en tbd_products_users_providers; escribe en tb_logs.",
+        "trg_wishlist_after_insert: AFTER INSERT en tbd_users_wishlist_products; escribe en tb_logs.",
+        "trg_wishlist_after_update: AFTER UPDATE en tbd_users_wishlist_products; escribe en tb_logs.",
+        "trg_wishlist_after_delete: AFTER DELETE en tbd_users_wishlist_products; escribe en tb_logs."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Vistas de trazabilidad · 4",
+      "items": [
+        "vw_trazabilidad_categorias: select `c`.`ID` AS `id`,`c`.`name` AS `name`,`c`.`description` AS `description`,`b`.`db_user` AS `inserted_by`,coalesce(group_concat(distinct `re`.`FROM_USER` order by `re`.`FROM_USER` ASC separator ', '),'Sin rol') AS `roles`,`b`.`operation_description` AS `operation_description`,`b`.`operation_date` AS `operation_date` from ((`tb_categories` `c` join `tb_logs` `b` on((`b`.`operation_description` like concat('%ID=',`c`.`ID`,'%')))) left join `mysql`.`role_edges` `re` on((`re`.`TO_USER` = substring_index(`b`.`db_user`,'@',1)))) where ((`b`.`table_operation` = 'Create') and (`b`.`table_name` = 'tb_categories')) group by `c`.`ID`,`c`.`name`,`c`.`description`,`b`.`db_user`,`b`.`operation_description`,`b`.`operation_date`",
+        "vw_trazabilidad_productos: select `p`.`ID` AS `id`,`p`.`name` AS `name`,`p`.`description` AS `description`,`b`.`db_user` AS `inserted_by`,coalesce(group_concat(distinct `re`.`FROM_USER` order by `re`.`FROM_USER` ASC separator ', '),'Sin rol') AS `roles`,`b`.`operation_description` AS `operation_description`,`b`.`operation_date` AS `operation_date` from ((`tb_products` `p` join `tb_logs` `b` on((`b`.`operation_description` like concat('%ID=',`p`.`ID`,'%')))) left join `mysql`.`role_edges` `re` on((`re`.`TO_USER` = substring_index(`b`.`db_user`,'@',1)))) where ((`b`.`table_operation` = 'Create') and (`b`.`table_name` = 'tb_products')) group by `p`.`ID`,`p`.`name`,`p`.`description`,`b`.`db_user`,`b`.`operation_description`,`b`.`operation_date`",
+        "vw_trazabilidad_productos_categorias: select `t`.`product_id` AS `product_id`,`t`.`category_id` AS `category_id`,`t`.`status` AS `status`,`b`.`db_user` AS `inserted_by`,coalesce(group_concat(distinct `re`.`FROM_USER` order by `re`.`FROM_USER` ASC separator ', '),'Sin rol') AS `roles`,`b`.`operation_description` AS `operation_description`,`b`.`operation_date` AS `operation_date` from ((`tbd_products_categories` `t` join `tb_logs` `b` on(((`b`.`operation_description` like concat('%product_id=',`t`.`product_id`,'%')) and (`b`.`operation_description` like concat('%category_id=',`t`.`category_id`,'%'))))) left join `mysql`.`role_edges` `re` on((`re`.`TO_USER` = substring_index(`b`.`db_user`,'@',1)))) where ((`b`.`table_operation` = 'Create') and (`b`.`table_name` = 'tbd_products_categories')) group by `t`.`product_id`,`t`.`category_id`,`t`.`status`,`b`.`db_user`,`b`.`operation_description`,`b`.`operation_date`",
+        "vw_trazabilidad_usuarios: select `u`.`nick` AS `nick`,`u`.`email` AS `email`,`b`.`db_user` AS `inserted_by`,coalesce(group_concat(distinct `re`.`FROM_USER` order by `re`.`FROM_USER` ASC separator ', '),'Sin rol') AS `roles`,`b`.`operation_description` AS `operation_description`,`b`.`operation_date` AS `operation_date` from ((`tb_users` `u` join `tb_logs` `b` on(((`b`.`operation_description` like concat('%',`u`.`nick`,'%')) and (`b`.`operation_description` like concat('%',`u`.`email`,'%'))))) left join `mysql`.`role_edges` `re` on((`re`.`TO_USER` = substring_index(`b`.`db_user`,'@',1)))) where ((`b`.`table_operation` = 'Create') and (`b`.`table_name` = 'tb_users')) group by `u`.`nick`,`u`.`email`,`b`.`db_user`,`b`.`operation_description`,`b`.`operation_date`"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Observaciones del respaldo",
+      "items": [
+        "Los triggers de categorías registran table_name='tbc_categories' y operación 'Insert'; el ENUM de tb_logs.table_operation solo admite Create, Read, Update y Delete. Insert no está admitido, por lo que puede fallar en modo estricto.",
+        "La vista de categorías busca tb_categories y Create, mientras sus triggers usan tbc_categories e Insert: la trazabilidad queda desalineada.",
+        "Las cuatro vistas consultan mysql.role_edges, una tabla externa del sistema cuya definición no viene en el respaldo. Los tipos de sus resultados no se inventan.",
+        "Las vistas relacionan descripciones mediante LIKE: no ofrecen integridad referencial ni coincidencias inequívocas.",
+        "Los triggers cubren categorías, productos, usuarios, proveedores y wishlist; no hay triggers declarados sobre carritos ni productos–categorías."
+      ]
+    }
+  ]
+}

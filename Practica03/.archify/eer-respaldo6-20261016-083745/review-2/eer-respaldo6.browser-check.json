@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "browser-check",
+  "evidenceKind": "automated-browser",
+  "status": "fail",
+  "visualReview": "not-requested",
+  "provenance": "current",
+  "deliveryReceiptId": "e4c03917-580d-458e-90cf-ab05ad464c59",
+  "artifact": {
+    "path": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+    "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+    "bytes": 871731
+  },
+  "state": {
+    "detail": "read",
+    "motion": "still"
+  },
+  "chrome": {
+    "status": "available",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/browser-check-runtime",
+      "severity": "error",
+      "message": "browser-check could not complete its Chrome inspection.",
+      "subject": {
+        "artifact": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html"
+      },
+      "evidence": {
+        "reason": "Chrome DevTools read pipe failed: stream ended\nChrome process: still running.\nChrome transport: Node v24.22.0, libuv 1.52.1, win32; pid=13860, exitCode=null, signalCode=null.\nChrome read pipe: readable=false, ended=true, destroyed=false, receivedBytes=0, messages=0, bufferedBytes=0.\nChrome write pipe: writable=true, ended=false, destroyed=false, completedWrites=1, writtenBytes=50, bufferedBytes=0."
+      },
+      "supportedFixes": [
+        "resolve the reported Chrome inspection error, then rerun browser-check"
+      ]
+    }
+  ],
+  "containment": {
+    "status": "fail",
+    "policy": "fit-or-reader-declared-readable-vertical-scroll",
+    "viewports": []
+  },
+  "themeStates": {
+    "status": "fail",
+    "viewports": []
+  },
+  "readability": {
+    "status": "fail",
+    "minimumProjectedNodeTextPx": 6,
+    "viewports": []
+  },
+  "viewerChrome": {
+    "status": "fail",
+    "viewports": []
+  },
+  "captures": {
+    "status": "not-requested",
+    "screenshots": [],
+    "contactSheet": null
+  },
+  "sidecars": {
+    "directory": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\review-2",
+    "receipt": "eer-respaldo6.browser-check.json",
+    "files": []
+  },
+  "error": "Chrome DevTools read pipe failed: stream ended\nChrome process: still running.\nChrome transport: Node v24.22.0, libuv 1.52.1, win32; pid=13860, exitCode=null, signalCode=null.\nChrome read pipe: readable=false, ended=true, destroyed=false, receivedBytes=0, messages=0, bufferedBytes=0.\nChrome write pipe: writable=true, ended=false, destroyed=false, completedWrites=1, writtenBytes=50, bufferedBytes=0."
+}

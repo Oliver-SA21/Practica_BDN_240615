@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "browser-check",
+  "evidenceKind": "automated-browser",
+  "status": "skipped",
+  "visualReview": "not-requested",
+  "provenance": "current",
+  "deliveryReceiptId": "639b86d8-53c4-441b-921c-48a998fc728b",
+  "artifact": {
+    "path": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+    "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+    "bytes": 871731
+  },
+  "state": {
+    "detail": "read",
+    "motion": "still"
+  },
+  "chrome": {
+    "status": "unavailable",
+    "executable": null
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/chrome-unavailable",
+      "severity": "warning",
+      "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+      "subject": {
+        "artifact": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html"
+      },
+      "evidence": {
+        "executable": null
+      },
+      "supportedFixes": [
+        "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun browser-check"
+      ]
+    }
+  ],
+  "containment": {
+    "status": "skipped",
+    "policy": "fit-or-reader-declared-readable-vertical-scroll",
+    "viewports": []
+  },
+  "themeStates": {
+    "status": "skipped",
+    "viewports": []
+  },
+  "readability": {
+    "status": "skipped",
+    "minimumProjectedNodeTextPx": 6,
+    "viewports": []
+  },
+  "viewerChrome": {
+    "status": "skipped",
+    "viewports": []
+  },
+  "captures": {
+    "status": "not-requested",
+    "screenshots": [],
+    "contactSheet": null
+  },
+  "sidecars": {
+    "receipt": "eer-respaldo6.browser-check.json",
+    "files": []
+  },
+  "error": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path."
+}

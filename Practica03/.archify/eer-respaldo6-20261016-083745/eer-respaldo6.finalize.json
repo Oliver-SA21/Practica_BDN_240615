@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "skipped",
+  "type": "erd",
+  "quality": "standard",
+  "startedAt": "2026-10-16T14:39:10.803Z",
+  "specification": {
+    "path": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\candidate.json",
+    "sha256": "04259a0635ee625c4d5fcd535d71e7e21ef6ca76ca8ab8d96673963afaaa09b9",
+    "bytes": 25120
+  },
+  "artifact": {
+    "path": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+    "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+    "bytes": 871731
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\osanc\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "erd",
+        "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\candidate.json",
+        "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+        "--quality",
+        "standard",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "04259a0635ee625c4d5fcd535d71e7e21ef6ca76ca8ab8d96673963afaaa09b9",
+          "bytes": 25120
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "standard",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 509,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\osanc\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "erd",
+        "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\candidate.json",
+        "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+        "--quality",
+        "standard",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "639b86d8-53c4-441b-921c-48a998fc728b",
+        "ok": true,
+        "command": "deliver",
+        "type": "erd",
+        "input": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\candidate.json",
+        "output": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+        "specification": {
+          "sha256": "04259a0635ee625c4d5fcd535d71e7e21ef6ca76ca8ab8d96673963afaaa09b9",
+          "bytes": 25120
+        },
+        "artifact": {
+          "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+          "bytes": 871731
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "standard",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 205,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\osanc\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+        "artifact": {
+          "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+          "bytes": 871731
+        },
+        "checks": [
+          {
+            "name": "single_svg",
+            "ok": true,
+            "details": [
+              "found 1 <svg> block(s)"
+            ]
+          },
+          {
+            "name": "finite_svg",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "orthogonal_arrows",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "label_route_clearance",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_crossings",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_corridors",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "container_border_runs",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "route_rhythm",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "legend_clearance",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "standard",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "metrics": {
+            "properCrossings": 0,
+            "resolvedCrossovers": 0,
+            "ambiguousCorridors": 0,
+            "arrowheadCollisions": 0,
+            "containerBorderRuns": 0,
+            "labelRouteClearanceIssues": 0,
+            "labelCanvasOverflowIssues": 0,
+            "minLabelRouteClearance": null,
+            "desktopReadabilityIssues": 0,
+            "viewportHeightIssues": 0,
+            "minProjectedNodeTextPx": 7.5,
+            "maxBends": 4,
+            "routesOverSuggestedBends": 1,
+            "maxStretch": 1.341,
+            "routesOverSuggestedStretch": 0,
+            "minSegmentPx": 24,
+            "minInteriorSegmentPx": 89,
+            "shortSegmentCount": 0,
+            "shortEndpointSegmentCount": 0,
+            "shortInteriorSegmentCount": 0,
+            "microSegmentCount": 0
+          },
+          "suggestedLimits": {
+            "bendsPerRelationship": 2,
+            "stretch": 1.35,
+            "segmentPx": 16,
+            "microSegmentPx": 8
+          },
+          "routeReview": {
+            "crossings": [],
+            "detours": [
+              {
+                "relationship": {
+                  "id": "fk_provider_user",
+                  "from": "tbd_products_users_providers",
+                  "to": "tb_users",
+                  "label": "",
+                  "collectionIndex": 4,
+                  "artifactIndex": 5
+                },
+                "bends": 4,
+                "stretch": 1.341
+              }
+            ]
+          },
+          "leadingSpace": {
+            "measured": false,
+            "reviewSuggested": false
+          },
+          "desktopReadability": {
+            "budgetBasis": "recognized-declared-wide",
+            "readerContract": "declared-wide-v1",
+            "availableDiagramWidth": 1080,
+            "actualBudgetPx": 1080,
+            "actualReaderWidth": 1110,
+            "desiredReaderWidth": 1110,
+            "viewportCap": 1376,
+            "limit": "source-size",
+            "requestedTargetPx": 7.5,
+            "requestedTargetMet": true,
+            "hardFloorPx": 6,
+            "hardFloorMet": true,
+            "minimumOwner": {
+              "kind": "node",
+              "id": "tb_carts"
+            },
+            "minimumSourceTextPx": 9,
+            "minimumProjectedTextPx": 7.5,
+            "semanticTextCount": 138
+          },
+          "issues": []
+        },
+        "provenance": "current",
+        "deliveryReceiptId": "639b86d8-53c4-441b-921c-48a998fc728b"
+      }
+    },
+    "browser-check": {
+      "status": "skipped",
+      "exitCode": 2,
+      "durationMs": 74,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\osanc\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "browser-check",
+        "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+        "--json",
+        "--require-provenance"
+      ],
+      "execution": "in-process",
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "browser-check",
+        "evidenceKind": "automated-browser",
+        "status": "skipped",
+        "visualReview": "not-requested",
+        "provenance": "current",
+        "deliveryReceiptId": "639b86d8-53c4-441b-921c-48a998fc728b",
+        "artifact": {
+          "path": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html",
+          "sha256": "4db4079e013ed847094d909eb94e7d81b3e2c19f509beb09dd8239fd23dd78bb",
+          "bytes": 871731
+        },
+        "state": {
+          "detail": "read",
+          "motion": "still"
+        },
+        "chrome": {
+          "status": "unavailable",
+          "executable": null
+        },
+        "diagnostics": [
+          {
+            "code": "viewer/chrome-unavailable",
+            "severity": "warning",
+            "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+            "subject": {
+              "artifact": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html"
+            },
+            "evidence": {
+              "executable": null
+            },
+            "supportedFixes": [
+              "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun browser-check"
+            ]
+          }
+        ],
+        "containment": {
+          "status": "skipped",
+          "policy": "fit-or-reader-declared-readable-vertical-scroll",
+          "viewports": []
+        },
+        "themeStates": {
+          "status": "skipped",
+          "viewports": []
+        },
+        "readability": {
+          "status": "skipped",
+          "minimumProjectedNodeTextPx": 6,
+          "viewports": []
+        },
+        "viewerChrome": {
+          "status": "skipped",
+          "viewports": []
+        },
+        "captures": {
+          "status": "not-requested",
+          "screenshots": [],
+          "contactSheet": null
+        },
+        "sidecars": {
+          "receipt": "eer-respaldo6.browser-check.json",
+          "files": []
+        },
+        "error": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path."
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/chrome-unavailable",
+      "severity": "warning",
+      "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+      "subject": {
+        "artifact": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.html"
+      },
+      "evidence": {
+        "executable": null
+      },
+      "supportedFixes": [
+        "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun browser-check"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.finalize.json",
+    "summaryReceipt": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.finalize-summary.json",
+    "browserCheckReceipt": "C:\\Users\\osanc\\Desktop\\Escuala\\Cuatrimestres\\Septimo Cuatrimestre\\Optativa I. Base de Datos en la Nube\\Unidad 1\\Practica_BDN_240615\\Practica03\\.archify\\eer-respaldo6-20261016-083745\\eer-respaldo6.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "browser-check",
+  "finishedAt": "2026-10-16T14:39:12.293Z",
+  "durationMs": 1490,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.1.0",
+    "availableVersion": "3.1.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-16T14:38:43.795Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}
