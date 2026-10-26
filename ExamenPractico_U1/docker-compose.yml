@@ -1,0 +1,17 @@
+name: practica02_240615
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_240615
+    restart: "no"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Definir MYSQL_ROOT_PASSWORD en .env}
+      MYSQL_DATABASE: db_test_7b
+    ports:
+      - "127.0.0.1:40615:3306"
+    volumes:
+      - mysql_data_240615:/var/lib/mysql
+
+volumes:
+  mysql_data_240615:
