@@ -1,0 +1,101 @@
+﻿ID,name,description,sup_id_category,status,creation_date,last_update
+,Electrónica,Dispositivos y equipos electrónicos de uso cotidiano,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Computadoras,Equipos de cómputo de escritorio y portátiles,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Laptops,Computadoras portátiles para trabajo y estudio,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Componentes de PC,Piezas internas y repuestos para computadoras,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Periféricos,"Teclados, ratones y dispositivos de entrada",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Monitores,Pantallas para computadoras y estaciones de trabajo,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Impresoras,Equipos de impresión y multifuncionales,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Almacenamiento,"Unidades USB, discos duros y memorias",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Redes y conectividad,"Routers, switches y accesorios de red",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Software,Programas y licencias para dispositivos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Teléfonos celulares,Smartphones y teléfonos móviles,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Accesorios para celulares,"Fundas, protectores y soportes móviles",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Tabletas,Dispositivos tablet y accesorios compatibles,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Audio,Equipos de sonido y reproducción de audio,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Audífonos,Audífonos alámbricos e inalámbricos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Bocinas,Altavoces portátiles y para el hogar,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Televisores,Pantallas inteligentes y televisores,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Video y proyectores,Proyectores y accesorios audiovisuales,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Cámaras fotográficas,Cámaras digitales y accesorios fotográficos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Seguridad electrónica,Cámaras de vigilancia y alarmas,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Videojuegos,Productos relacionados con videojuegos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Consolas,Consolas de videojuegos y accesorios,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Controles,Mandos y controles para jugar,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Juegos de mesa,Juegos de tablero y convivencia,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Juguetes,Juguetes infantiles y recreativos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Figuras coleccionables,Figuras de acción y piezas coleccionables,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Libros,Libros impresos de distintos géneros,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Papelería,Artículos escolares y de oficina,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Material escolar,Útiles y suministros para estudiantes,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Arte y manualidades,"Materiales para dibujo, pintura y creación",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Muebles,Muebles para interiores y espacios de trabajo,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Decoración,Accesorios decorativos para espacios,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Iluminación,Lámparas y soluciones de iluminación,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Cocina,Utensilios y accesorios para cocinar,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Comedor,Vajillas y accesorios para servir alimentos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Electrodomésticos,Aparatos eléctricos para el hogar,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Refrigeración,Refrigeradores y congeladores domésticos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Lavado y limpieza,Equipos y herramientas para limpieza,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Organización del hogar,"Cajas, repisas y productos organizadores",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Textiles del hogar,"Sábanas, cobijas, cortinas y toallas",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Ropa para hombre,Prendas de vestir masculinas,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Ropa para mujer,Prendas de vestir femeninas,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Ropa infantil,Prendas de vestir para niñas y niños,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Calzado para hombre,"Zapatos, botas y sandalias masculinos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Calzado para mujer,"Zapatos, botas y sandalias femeninos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Calzado infantil,Zapatos y tenis para niñas y niños,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Ropa deportiva,Prendas adecuadas para actividad física,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Bolsas y mochilas,"Bolsas, mochilas y accesorios de transporte",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Relojes,Relojes de pulsera y accesorios,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Joyería y bisutería,"Collares, pulseras, anillos y aretes",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Belleza,Productos de cuidado estético y personal,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Cuidado de la piel,"Cremas, limpiadores y tratamientos cosméticos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Cuidado del cabello,"Champús, acondicionadores y tratamientos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Maquillaje,Cosméticos y accesorios de maquillaje,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Perfumes y fragancias,Fragancias y productos aromáticos personales,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Higiene personal,Productos para aseo e higiene diaria,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Salud y bienestar,Artículos generales de bienestar personal,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Cuidado bucal,"Cepillos, pastas e higiene dental",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Bebés,Artículos para cuidado de bebés,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Maternidad,Accesorios y productos para maternidad,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Deportes,Artículos para practicar diferentes deportes,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Fitness y gimnasio,Equipamiento para entrenamiento físico,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Ciclismo,Bicicletas y accesorios para ciclistas,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Fútbol,"Balones, uniformes y equipo de fútbol",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Baloncesto,Balones y equipo para baloncesto,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Natación,Trajes de baño y equipo acuático,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Campismo,Tiendas de campaña y material de campamento,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Senderismo,"Mochilas, bastones y accesorios de senderismo",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Pesca deportiva,"Cañas, carretes y accesorios de pesca",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Movilidad personal,"Patines, patinetas y scooters",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Automotriz,Artículos y accesorios para automóviles,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Refacciones automotrices,Piezas de reemplazo para vehículos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Herramientas automotrices,Herramientas para mantenimiento vehicular,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Motocicletas,Accesorios y productos para motociclistas,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Llantas y rines,"Neumáticos, rines y accesorios relacionados",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Lubricantes,Aceites y lubricantes para maquinaria y vehículos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Ferretería,Suministros generales de ferretería,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Herramientas manuales,"Llaves, pinzas, desarmadores y martillos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Herramientas eléctricas,"Taladros, sierras y equipos eléctricos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Material de construcción,Materiales para obras y remodelaciones,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Jardinería,Herramientas y artículos para jardines,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Plantas y semillas,Plantas ornamentales y semillas de cultivo,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Mascotas,Productos generales para animales domésticos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Alimento para mascotas,Croquetas y alimentos para mascotas,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Accesorios para mascotas,"Correas, camas, juguetes y transportadoras",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Alimentos y despensa,Productos alimenticios de consumo habitual,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Bebidas,"Jugos, agua, refrescos y bebidas sin alcohol",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Café y té,"Cafés, infusiones y artículos relacionados",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Dulces y botanas,"Golosinas, chocolates y aperitivos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Panadería y repostería,"Panes, galletas e ingredientes para hornear",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Instrumentos musicales,Instrumentos y accesorios para músicos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Accesorios musicales,"Cables, soportes y fundas para instrumentos",,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Oficina,Mobiliario y suministros para oficina,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Sillas de oficina,Sillas ergonómicas y ejecutivas,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Escritorios,Mesas y escritorios para trabajar,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Equipo industrial,Maquinaria y herramientas para industria,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Seguridad laboral,Equipos de protección para el trabajo,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Viajes y equipaje,Maletas y artículos para viajar,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Fiestas y eventos,Decoración y suministros para celebraciones,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
+,Regalos y recuerdos,Artículos para obsequios y recuerdos,,1,2026-10-16 11:45:00,2026-10-16 11:45:00
